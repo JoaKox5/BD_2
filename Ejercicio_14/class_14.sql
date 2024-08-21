@@ -1,5 +1,6 @@
 
-select concat(c.first_name, " ", c.last_name) as nombre_apellido ,ad.address , co.country from customer c, address ad, city ci, country co
+select concat(c.first_name, " ", c.last_name) as nombre_apellido ,ad.address , co.country from customer c, 
+address ad, city ci, country co
 where c.address_id = ad.address_id
 and ad.city_id = ci.city_id
 and ci.country_id = co.country_id
